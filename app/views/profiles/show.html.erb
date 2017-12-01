@@ -1,7 +1,12 @@
 <% if @user == current_user %>
   <%= link_to 'Edit Profile', edit_profile_path(@user.user_name) %>
   <% end %>
-  
+
+        <%= profile_avatar_select(@user) %>
+
+          <%= @user.bio %>
+
+
 <% @posts.each do |post| %>
   <%= render 'posts/post', post: post %>
 <% end %>
