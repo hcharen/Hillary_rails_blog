@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+ div.field em {
+  display: block;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #a79647;
+} 

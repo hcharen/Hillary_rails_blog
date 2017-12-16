@@ -8,7 +8,7 @@ class CommentsController < ApplicationController
       if @comment.save
         redirect_to post_path(@post)
       else
-        render rooot_path
+        render root_path
       end
     end
 
