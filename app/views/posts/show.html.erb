@@ -1,3 +1,4 @@
+<div class="post-container">
 <%= render 'post', post: @post %>
 <% if @post.user.id == current_user.id %>
   <div class="text-center edit-links">
@@ -11,3 +12,4 @@
     <%= link_to "Back", posts_path %>
   </div>
 <% end %>
+</div>
