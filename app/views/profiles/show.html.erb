@@ -1,5 +1,6 @@
 <% if @user == current_user %>
   <%= link_to 'Edit Profile', edit_profile_path(@user.user_name) %>
+  <%= link_to "Account Settings", edit_user_registration_path%>
   <% end %>
 
   <%= profile_avatar_select(@user) %>
